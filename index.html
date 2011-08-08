@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Text Box Enter</title>
+    <style>
+      body {
+        font: 16px/1.5 helvetica-neue, helvetica, arial, san-serif;
+		background: #EFEFEF;
+      }
+      ul li {
+		list-style: none;
+		display: block;
+		color: #333;
+		text-shadow: 0 1px 0 #fff;
+		padding: 5px 0;
+	  }
+    </style>
+</head>
+<body>
+	<h1>Tweets</h1>
+	
+	<ul id="popular"></ul>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<script type="text/javascript">
+		/* add variables for 1. file to read from, 2. twitter username, 3. number of tweets to show */
+		singleFeature.getItems('feed.php', 'johnernaut', 9);
+	</script>
+</body>
+</html>
